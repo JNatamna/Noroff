@@ -8,8 +8,8 @@ h1{
     float: left;
 }
 img{
-    height: 10%;
-    width: 10%;
+    height: auto;
+    max-width: 30%;
 }
 
 button{
@@ -37,25 +37,15 @@ button{
     background-color: black;
 }
 
-#flex-item1{
+.flexStyle{
+    display: flex;
+    flex-direction: column;
     flex:15%;
     margin: 5%;
     background-color: rgb(244, 241, 238);
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-#flex-item2{
-    flex:15%;
-    margin: 5%;
-    background-color: rgb(244, 241, 238);
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-#flex-item3{
-    flex: 15%;
-    margin: 5%;
-    background-color: rgb(244, 241, 238);
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    height: 250px;
-}
+
 #flex-item4{
     justify-content: flex-start;
     flex-direction: column; 
