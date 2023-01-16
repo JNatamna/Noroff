@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1</title>
-    <style>
-        h1 {color:red;}
-        p {color:blue;}
-    </style>
+    <title>Task 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,31 +16,37 @@
             <h1>
                 Joe Banker
             </h1>
-            <p>Balance:</p><p id="bankValueP">0</p>
-            <p>Debt:</p><p id="debtValueP">0</p>
+            <p>Balance:</p><p id="bankValueP">😂😂0 kr😂😂</p>
+            <p>Debt:</p><p id="debtValueP">👍0 kr</p>
             <button onclick="getLoan()">Get a loan</button>
+            <button id="btn-pay-loan" onclick="payLoan()">Pay loan</button>
         </div>
         <div id="flex-item2">
             <h1>
                 Work
             </h1>
-            <p>Pay:</p><p id="pay">0</p>
+            <p>Pay:</p><p id="pay">0 kr👀👀👀</p>
             <button onclick="bankMoney()">Bank</button><button onclick="work()">Work</button>
         </div>
         <div id="flex-item3">
             <h1>
                 Laptops
             </h1>
-            <select></select>
+            <select onchange="updateLaptopValues()" onfocus="this.selectedIndex = -1;" id="select">
+                <option value="">-- Select --</option>
+            </select>
+            <h3>Features:</h3>
+            <p style="font-size:14px;"></p>
         </div>
         <div id="flex-item4">
-            <div id="lapImg"></div>
+            <div><img onerror="imgFailed()" onload="imgComplete()"id="lapImg"></div>
             <div id="lapDesc"><h1></h1><p></p></div>
-            <div id="lapPris"><h2></h2><button id="buyBtn">BUY NOW</button></div>
-            <div></div>
+            <div><h2 id="lapPris"></h2><button onclick="buyLaptop()">BUY NOW</button></div>
         </div>
     </div>
 
-<script src="script.js"></script>
+<script src="./scripts/dataFetcher.js"></script>
+<script src="./scripts/domFetcher.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
 </html>

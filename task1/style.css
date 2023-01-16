@@ -3,8 +3,13 @@
     padding: 0%;
 }
 
-div{
-    box-shadow: 2px 1px 1px 2px;
+h1{
+    color: red;
+    float: left;
+}
+img{
+    height: 10%;
+    width: 10%;
 }
 
 button{
@@ -35,20 +40,32 @@ button{
 #flex-item1{
     flex:15%;
     margin: 5%;
+    background-color: rgb(244, 241, 238);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 #flex-item2{
     flex:15%;
     margin: 5%;
+    background-color: rgb(244, 241, 238);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 #flex-item3{
     flex: 15%;
     margin: 5%;
+    background-color: rgb(244, 241, 238);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 250px;
 }
 #flex-item4{
     justify-content: flex-start;
     flex-direction: column; 
     flex:1 100%;
     margin: 5%;
-    height: 300px;
-    background-color: blue;
+    height: 250px;
+    background-color: rgb(244, 241, 238);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#btn-pay-loan{
+    display:none;
 }
