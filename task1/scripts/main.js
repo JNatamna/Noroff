@@ -19,6 +19,10 @@ function payLoan(){
         currentLoan = 0;
         bankValue += Math.abs(temp);
     }
+
+    if(currentLoan == 0){
+        payLoanBtn.style.display = "none";
+    }
     currentValue = 0;
     bankValueP.innerText = bankValue+ " kr";
     debtValueP.innerText = currentLoan+ " kr";
